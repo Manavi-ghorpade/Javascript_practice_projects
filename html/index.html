@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title> My first home page</title>
+        <!-- three types - inline, internal, external style sheet -->
+        <style>
+            p
+            {
+                color: aliceblue;
+                background: black;
+            }
+        </style> 
+
+        <link rel="stylesheet" href="./style.css"> <!-- external -->
+
+    </head><!-- Contains meta-information about the document-->
+
+    <body> <!-- everything on the page body -->
+       <!-- pragraph tag-->
+        <p> Hello world !! </p> 
+
+        <h1>hello world</h1> <!-- from 1 tp 6-->
+        <button id="but1" onclick="date1()" > what is the time</button>
+        <!-- comman html events - onclick, onmouseover, onmouseout, onchange, onkeydown, onload-->
+        <ul> 
+            <li>eggs</li><!--list items -->
+            <li>milk</li>
+            <li>cheese</li>
+        </ul> <!-- ul stands for unordered list-->
+
+        <a href="https://google.com">search item</a> <!-- use a tag to add link-->
+
+       <!-- <img src="https://hips.hearstapps.com/wdy.h-cdn.co/assets/17/39/1506709524-cola-0247.jpg?crop=1.00xw:0.750xh;0,0.214xh&resize=1200:*"> --> 
+       
+        <button id="turnonbutton" >Turn light on</button>
+        <img id="myimage" src="download.png" style="width: 100px;">
+        <button id = "turnoffbutton" >Turn off light</button>
+
+        <!--table in html-->
+        <table border="3">
+            <tr> <!--table row-->
+                <td>col 1</td> <!--table col-->
+                <td>col 2</td>
+            </tr>
+            <tr>
+                <td>col 1</td> <!--table col-->
+                <td>col 2</td>
+            </tr>
+            <tr>
+                <td>col 1</td> <!--table col-->
+                <td>col 2</td>
+            </tr>
+        </table>
+
+        <div id="box"> <!-- simply a container where we can wrap anything in -->
+            some text
+        </div>
+        
+        <div class="box">
+            some text
+        </div>
+
+        <!--java script external-->
+        <script src="./script.js"></script>
+
+        <form action="index.html" method="GET"> <!-- get append data to url as query, small amount of data submission-->
+            <!-- post sends form data in reuest body, suitable for large data-->
+            <input type="text" name="name" placeholder="Name"> <!-- name attribute used to identify form when using js-->
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
